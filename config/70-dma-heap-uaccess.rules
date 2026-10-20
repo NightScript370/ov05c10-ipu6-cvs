@@ -1,0 +1,3 @@
+# Let the active desktop user allocate dma-buf memory; libcamera's software ISP needs it.
+SUBSYSTEM=="dma_heap", KERNEL=="system", TAG+="uaccess"
+KERNEL=="udmabuf", TAG+="uaccess"

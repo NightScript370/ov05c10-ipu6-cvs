@@ -1,0 +1,8 @@
+# Installed as /etc/v4l2-relayd (overrides /etc/default/v4l2-relayd).
+# libcamera (software ISP) -> "Integrated Camera" virtual webcam, started on demand.
+VIDEOSRC="libcamerasrc saturation=1.00 contrast=1.15 gamma=2.20 ! video/x-raw,width=1280,height=720 ! videoconvert"
+FORMAT=YUY2
+WIDTH=1280
+HEIGHT=720
+FRAMERATE=30/1
+CARD_LABEL="Integrated Camera"
